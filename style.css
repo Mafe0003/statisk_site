@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.logo img {
+  width: 50%;
+}
+
+.links {
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.links a {
+  font-size: 0.8rem;
+  gap: 1rem;
+  color: gray;
+}
+
+/* MAIN */
+main {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: "Host Grotesk", serif;
+  font-style: normal;
+}
+
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.grid_1-1-1-1 a {
+  text-decoration: none;
+  color: white;
+  padding: 1.5rem;
+  background-color: rgb(136, 142, 140);
+}
+
+.product_list_container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.product_list_container img {
+  width: 100%;
+}
+
+.produkt {
+  margin-bottom: 2rem;
+}
+
+.produkt.udsolgt img {
+  opacity: 0.5; /* Gør billedet lidt transparent */
+  filter: grayscale(100%); /* Gør billedet sort/hvid */
+}
+
+.overskrift {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.underoverskrift {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.read_more {
+  font-size: 1rem;
+  color: gray;
+}
+
+.pris {
+  font-size: 0.8rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+/* STYLING AF GRID_2-1; prisen og rabat */
+.grid_2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.discount {
+  background-color: red;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .links a {
+    font-size: 1rem;
+    gap: 2rem;
+  }
+
+  main {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .grid_1-1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .logo img {
+    width: 15%;
+  }
+
+  .product_list_container {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .overskrift {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .underoverskrift {
+    font-size: 1rem;
+  }
+
+  .pris {
+    font-size: 1.1rem;
+  }
+}
