@@ -104,6 +104,41 @@ p {
   margin: 0.3rem;
 }
 
+/* PRODUKT SIDEN */
+.grid_1-1-1 img {
+  width: 100%;
+}
+
+/* snakker til grid_1-1 og får description og basket til at være ved siden af hinanden i mobil først */
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* giver lidt luft mellem h3'er og tekst */
+h3 {
+  margin-top: 1rem;
+}
+
+.Kalenji {
+  margin-top: 2rem;
+}
+
+/* basket skal have en grå baggrund */
+.basket {
+  background-color: gray;
+  color: white;
+  padding: 1rem;
+}
+
+.grid_3-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
 @media screen and (min-width: 768px) {
   header {
     padding-top: 2rem;
@@ -145,5 +180,15 @@ p {
 
   .pris {
     font-size: 1.1rem;
+  }
+
+  /* PRODUKT SIDEN */
+
+  /* snakker til grid_1-1-1 og får billeder og grid_1-1 til at være ved siden af hinanden i desktop */
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
   }
 }
