@@ -38,6 +38,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .grid_1-1-1-1 a {
@@ -45,6 +46,10 @@ main {
   color: white;
   padding: 1.5rem;
   background-color: rgb(136, 142, 140);
+}
+
+h1 {
+  margin-top: 1rem;
 }
 
 /* PRODUKTLISTE SIDEN */
