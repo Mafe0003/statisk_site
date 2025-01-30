@@ -8,7 +8,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
     productContainer.innerHTML = `
     <div class="grid_1-1-1">
             <div>
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1571.webp" alt="hvide sko">
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/${productId}.webp" alt="hvide sko">
             </div>
             <div class="grid_1-1">
                 <div class="description">
