@@ -1,0 +1,200 @@
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  /* max-width: 1200px; 
+  margin-inline: auto;  */
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* LOGO */
+
+.logo_img {
+  width: 20%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+/* BUTTONS FOR CATEGORIES */
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.button {
+  background-color: #a0a0a0;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 2%;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #535353;
+}
+
+.button a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* PRODUKTLISTE */
+
+.produkt {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-rows: repeat(5, auto);
+}
+
+.item {
+  grid-row: span 5;
+  display: grid;
+  /* grid-template-rows: subgrid; */
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* PRODUKT  */
+
+.grid_1_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.kurv {
+  background-color: #a0a0a0;
+  color: white;
+  padding: 1.5rem;
+}
+
+/* TEKST */
+
+h1,
+h2,
+h3,
+a,
+p,
+button {
+  font-family: "Host Grotesk", serif;
+  margin-top: 15px;
+}
+
+a {
+  color: #000000;
+}
+
+/* DISCOUNT */
+
+.discount {
+  position: absolute;
+  top: 55%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #a0a0a0;
+  width: 50px;
+  color: white;
+  font-family: "Host Grotesk", serif;
+}
+
+.discount2 {
+  position: absolute;
+  top: 14%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #a0a0a0;
+  width: 50px;
+  color: white;
+  font-family: "Host Grotesk", serif;
+}
+
+.foer_pris {
+  text-decoration: line-through;
+  color: grey;
+}
+
+/* SOLD OUT */
+
+.sold_out {
+  position: absolute;
+  top: 6%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #a0a0a0;
+  width: 50px;
+  color: white;
+  font-family: "Host Grotesk", serif;
+}
+
+.sold_out_img {
+  position: relative;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .logo_img {
+    width: 40%;
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .produkt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .discount {
+    position: absolute;
+    top: 48%;
+    left: 88%;
+  }
+
+  .sold_out {
+    position: absolute;
+    top: 5%;
+    left: 12%;
+  }
+
+  .grid_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .discount2 {
+    position: absolute;
+    top: 9%;
+    left: 13%;
+  }
+}
